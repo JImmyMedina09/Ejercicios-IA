@@ -1,0 +1,11 @@
+def imprimir_arbol():
+    # Parte superior del árbol
+    for i in range(1, 8, 2):  # Los números 1, 3, 5, 7
+        print(' ' * ((7 - i) // 2) + '*' * i)
+    
+    # Parte inferior del árbol
+    for i in range(5, 0, -2):  # Los números 5, 3, 1
+        print(' ' * ((7 - i) // 2) + '*' * i)
+
+# Llamar a la función para imprimir el árbol
+imprimir_arbol()
